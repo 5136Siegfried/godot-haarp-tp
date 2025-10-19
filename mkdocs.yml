@@ -1,0 +1,60 @@
+site_name: "TP Godot — Projet HAARP RTS"
+site_description: "Apprentissage progressif du développement de jeux vidéo avec Godot Engine 4."
+site_url: "https://5136.fr/godot-haarp-tp/"
+repo_url: "https://github.com/<ton-username>/godot-haarp-tp"
+repo_name: "godot-haarp-tp"
+
+theme:
+  name: "material"
+  language: "fr"
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Mode sombre
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/white-balance-sunny
+        name: Mode clair
+  font:
+    text: "Inter"
+    code: "JetBrains Mono"
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - content.code.copy
+    - content.code.annotate
+    - toc.integrate
+
+nav:
+  - Accueil: index.md
+  - Prérequis: prerequis.md
+  - Feuille de route: roadmap.md
+  - Étapes du TP:
+      - Étape 1 — Square Hero: steps/step1_squarehero.md
+      - Étape 2 — Balle rebondissante: steps/step2_balle_rebondissante.md
+      - Étape 3 — Click-to-Move: steps/step3_click_to_move.md
+      - Étape 4 — Orage contrôlable: steps/step4_orage.md
+      - Étape 5 — Terrain réactif: steps/step5_terrain.md
+      - Étape 6 — Combat météo: steps/step6_combat.md
+      - Étape 7 — Prototype HAARP RTS: steps/step7_prototype.md
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
